@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
     $myfile = fopen("data-save.txt","a"); 
  
     
-    fwrite($myfile, $eml.' '.$fnm.' '.$db.' '.$unm.' '.$pass.' '.$utype. " \r\n");
+    fwrite($myfile, $eml.'|'.$fnm.'|'.$db.'|'.$unm.'|'.$pass.'|'.$utype. " \r\n");
 
     
     

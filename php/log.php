@@ -12,9 +12,9 @@ if(isset($_POST['submit'])){
     	   $test = explode(" ",$data);
         
            if($Unm == $test[3] && $Pass == $test[4]){
-        	
-           $_SESSION['fname'] = $test[0];    
-           $_SESSION['email'] = $test[1];
+        	    
+           $_SESSION['email'] = $test[0];
+           $_SESSION['fname'] = $test[1];
            $_SESSION['dob'] = $test[2];
            $_SESSION['unm'] = $test[3];
            $_SESSION['pass'] = $test[4];

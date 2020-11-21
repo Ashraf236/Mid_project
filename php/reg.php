@@ -22,12 +22,12 @@ if(isset($_POST['submit'])){
     
     fclose($myfile);
 
- 	echo "Registration complete...........Now you can login as an User or Admin";
+ 	echo "Registration complete...........Now you can login as an User or Admin  <br> "."<a href= '../view/login.html'>Login</a>";
 
  	
  }
  else{
- 	echo "not registered......register again";
+ 	echo "not registered......register again"."<a href= 'reg.html'>Back</a>";
  }
 
 

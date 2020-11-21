@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     if(!$Unm == "" && !$Pass == ""){
              $myfile = fopen("data-save.txt","r");
        while($data = fgets($myfile)){
-    	   $test = explode(" ",$data);
+    	   $test = explode("|",$data);
         
            if($Unm == $test[3] && $Pass == $test[4]){
         	

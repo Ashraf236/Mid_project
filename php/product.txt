@@ -1,0 +1,2 @@
+Apple|Green Apple|150tk 
+Orange|Red Orange|200tk 

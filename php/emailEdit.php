@@ -9,7 +9,7 @@
   if(isset($_SESSION['email'])){
   	     
 
-  	if(isset($_POST['changeEmail'])){
+  	if(isset($_POST['changeEmail']) && !$_POST['email'] == ""  ){
   	   $email = $_POST['email'];
 
 
@@ -36,7 +36,10 @@
 
   	}
 
-         
+    else
+    {
+      echo "Email field EMPTY"."<a href='../php/userEmailEdit.php'>Back</a>";
+    }     
 
 
   }

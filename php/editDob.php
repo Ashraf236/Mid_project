@@ -9,7 +9,7 @@
   if(isset($_SESSION['email'])){
   	     
 
-  	if(isset($_POST['changeDOB'])){
+  	if(isset($_POST['changeDOB']) && !$_POST['DOB'] == ""  ){
   	   $email = $_SESSION['email'];
        $DOB = $_POST['DOB'];
 

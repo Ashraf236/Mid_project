@@ -9,7 +9,7 @@
   if(isset($_SESSION['email'])){
          
 
-    if(isset($_POST['changePass'])){
+    if(isset($_POST['changePass']) && !$_POST['newPass'] == "" && !$_POST['rePass'] =="" ){
        $email = $_SESSION['email'];
        $nPass = $_POST['newPass'];
        $rPass = $_POST['rePass'];      
@@ -40,8 +40,11 @@
 
     }
     else{
-        echo "Password Not Matched"."<a href='../php/userPassEdit.php'>Back</a>";
+        echo "Password Not Matched <br> "."<a href='../php/userPassEdit.php'>Back</a>";
       }
+}
+else{
+	echo "New Password fields are empty <br>"."<a href='../php/userPassEdit.php'>Back</a>";
 }
 }
 
